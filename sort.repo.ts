@@ -1,7 +1,12 @@
 import bubbleSort from './bubble-sort'
+import selectionSort from './selection-sort'
 
+/**
+ * Collection of sort functions.
+ */
 const sorters = [
-  bubbleSort
+  bubbleSort,
+  selectionSort
 ]
 
 export default sorters
