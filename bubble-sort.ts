@@ -9,7 +9,8 @@ const bubbleSort = (nums: number[]): number[] => {
   for (let loop = 0; loop < nums.length - 1; loop++) {
     let sorted = true
 
-    // Each loop the sorted portion of the array increases by one
+    // In each loop iteration the sorted portion of the array increases by one, 
+    // hence the '- loop' in 'idx < nums.length - loop - 1'.
     for (let idx = 0; idx < nums.length - loop - 1; idx++) {
       if (nums[idx] > nums[idx + 1]) {
         [nums[idx], nums[idx + 1]] = [nums[idx + 1], nums[idx]]
