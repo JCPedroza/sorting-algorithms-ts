@@ -30,7 +30,7 @@ npm install # Modules
 #### Unit Tests
 
 ```bash
-./scripts/unit-tests-bun.sh # Run all unit tests with the Bun runtime
-./scripts/unit-tests-ts-node.sh # Run all unit tests with the TS-Node runtime
-./scripts/unit-tests-ts-tsc.sh # Transpile with TSC and run unit tests with node runtime
+./scripts/unit-tests-bun.sh # Run all unit tests with Bun
+./scripts/unit-tests-ts-node.sh # Run all unit tests with TS-Node
+./scripts/unit-tests-ts-tsc.sh # Transpile with TSC and run unit tests with Node
 ```
