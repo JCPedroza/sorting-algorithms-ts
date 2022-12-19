@@ -1,1 +1,1 @@
-bun ./tests/sort.test.ts
+time bun ./tests/sort.test.ts
