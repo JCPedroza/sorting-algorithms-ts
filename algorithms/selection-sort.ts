@@ -7,15 +7,16 @@
  */
 const selectionSort = (nums: number[]): number[] => {
   for (let loop = 0; loop < nums.length; loop++) {
-    let maxIdx = loop
+    let minIdx = loop
 
+    // In the unsorted portion, find min and swap it with the first item.
     for (let idx = loop; idx < nums.length; idx++) {
-      if (nums[idx] < nums[maxIdx]) {
-        maxIdx = idx
+      if (nums[idx] < nums[minIdx]) {
+        minIdx = idx
       }
     }
 
-    [nums[loop], nums[maxIdx]] = [nums[maxIdx], nums[loop]]
+    [nums[loop], nums[minIdx]] = [nums[minIdx], nums[loop]]
   }
 
   return nums
