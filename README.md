@@ -29,7 +29,7 @@ npm install # Modules
 
 #### Unit Tests
 
-##### POSIX
+##### POSIX Shell Scripts
 
 ```bash
 ./scripts/unit-tests-bun.sh # Run all unit tests with Bun
