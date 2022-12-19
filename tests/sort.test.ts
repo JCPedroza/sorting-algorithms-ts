@@ -1,5 +1,5 @@
 /**
- * Unit tests for sort functions.
+ * Unit tests for sorting functions.
  */
 
 import sorters from '../algorithms/sort.repo'
@@ -23,6 +23,8 @@ const throwError = (
   const msg = `${why}\n${id}\n[${strNumsA}]\n[${strNumsB}]`
   throw new Error(msg)
 }
+
+const buildId = (fun: string, arg: string) => `${fun}(${arg})`
 
 /**
  * Micro test framework. Asserts equality between two numeric arrays.
@@ -48,23 +50,23 @@ const test = (id: string): Expectation => ({
 })
 
 for (const sort of sorters) {
-  test(sort.name)
+  test(buildId(sort.name, '[]'))
     .expect(sort([]))
     .toEqual([])
 
-  test(sort.name)
+  test(buildId(sort.name, '[5]'))
     .expect(sort([5]))
     .toEqual([5])
 
-  test(sort.name)
+  test(buildId(sort.name, '[1, 2, 3]'))
     .expect(sort([1, 2, 3]))
     .toEqual([1, 2, 3])
 
-  test(sort.name)
+  test(buildId(sort.name, '[5, 4, 3, 2, 1]'))
     .expect(sort([5, 4, 3, 2, 1]))
     .toEqual([1, 2, 3, 4, 5])
 
-  test(sort.name)
+  test(buildId(sort.name, '[3.4, -6.2, -0.7, 9.8, 1.6, -4.5]'))
     .expect(sort([3.4, -6.2, -0.7, 9.8, 1.6, -4.5]))
     .toEqual([-6.2, -4.5, -0.7, 1.6, 3.4, 9.8])
 }
