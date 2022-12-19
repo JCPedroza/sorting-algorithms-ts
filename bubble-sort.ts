@@ -1,7 +1,7 @@
 /**
  * Sorts number array in-place using Bubble Sort.
  * Complexity: time AO(n²) WO(n²) BO(n), space TO(n) AO(1).
- * 
+ *
  * @param nums Number array to be sorted.
  * @returns Reference to the input array, now sorted.
  */
