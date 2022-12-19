@@ -2,9 +2,13 @@
 
 Sorting algorithms implemented in TypeScript.
 
-## Dependencies
+## Install Dependencies
 
-- Bun
+### Ubuntu
+
+```bash
+curl -fsSL https://bun.sh/install | bash # Bun
+```
 
 ## Usage
 
