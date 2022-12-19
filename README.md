@@ -1,10 +1,12 @@
 # Sorting Algorithms Implemented in TypeScript
 
-Some sorting algorithms implemented in TypeScript.
+Sorting algorithms implemented in TypeScript.
+
+## Dependencies
+
+- Bun
 
 ## Usage
-
-The only dependency is `Bun`, used as TypeScript runtime.
 
 To run unit tests:
 
