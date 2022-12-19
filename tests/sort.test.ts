@@ -20,7 +20,7 @@ const throwError = (
 ): void => {
   const strNumsA = String(numsA)
   const strNumsB = String(numsB)
-  const msg = `${why}\n${id}\n[${strNumsA}]\n[${strNumsB}]`
+  const msg = `${why}\n${id}\nReturned: [${strNumsA}]\nExpected: [${strNumsB}]`
   throw new Error(msg)
 }
 
