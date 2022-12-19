@@ -1,3 +1,7 @@
+/**
+ * Assertion utilities.
+ */
+
 interface EqualityAssertion {
   toEqual: (numsB: number[]) => void
 }
