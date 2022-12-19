@@ -25,10 +25,12 @@ npm install # Modules
 
 ## Usage
 
-To run unit tests:
+### Provided Scripts
+
+#### Unit Tests
 
 ```bash
-./scripts/unit-tests-bun.sh # Bun runtime
-./scripts/unit-tests-ts-node.sh # TS-Node runtime
-./scripts/unit-tests-ts-tsc.sh # Compile with TSC and run with node
+./scripts/unit-tests-bun.sh # Run all unit tests with the Bun runtime
+./scripts/unit-tests-ts-node.sh # Runn all unit tests with the TS-Node runtime
+./scripts/unit-tests-ts-tsc.sh # Compile everything with TSC and run unit tests with node runtime
 ```
