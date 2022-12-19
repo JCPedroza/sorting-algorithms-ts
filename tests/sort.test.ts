@@ -2,7 +2,7 @@
  * Unit tests for sort functions.
  */
 
-import sorters from './sort.repo'
+import sorters from '../algorithms/sort.repo'
 
 interface EqualityAssertion {
   toEqual: (numsB: number[]) => void
