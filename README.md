@@ -3,9 +3,9 @@
 This is an exercise to study and practice:
 
 - TypeScript
+- Sorting algorithms
 - Unit testing
 - Time and memory profiling
-- Sorting algorithms
 
 ## Prompt
 
@@ -28,6 +28,7 @@ npm install # Modules
 To run unit tests:
 
 ```bash
-./scripts/unit-tests-bun.sh # Bun
-./scripts/unit-tests-ts-node.sh # TS-Node
+./scripts/unit-tests-bun.sh # Bun runtime
+./scripts/unit-tests-ts-node.sh # TS-Node runtime
+./scripts/unit-tests-ts-tsc.sh # Compile with TSC and run with node
 ```
