@@ -29,6 +29,8 @@ npm install # Modules
 
 #### Unit Tests
 
+##### POSIX
+
 ```bash
 ./scripts/unit-tests-bun.sh # Run all unit tests with Bun
 ./scripts/unit-tests-ts-node.sh # Run all unit tests with TS-Node
