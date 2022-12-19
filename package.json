@@ -1,6 +1,11 @@
 {
   "name": "sorting-algorithms-ts",
   "version": "0.0.0",
+  "engines": {
+    "node": ">=18.12.1",
+    "npm": ">=8.19.2",
+    "bun": ">=0.1.5"
+  },
   "description": "Sorting algorithms implemented in TypeScript.",
   "directories": {
     "test": "tests"
