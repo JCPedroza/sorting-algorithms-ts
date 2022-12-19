@@ -1,25 +1,27 @@
 {
-  "name": "ts",
-  "version": "1.0.0",
+  "name": "sorting-algorithms-ts",
+  "version": "0.0.0",
   "description": "Sorting algorithms implemented in TypeScript.",
-  "main": "index.js",
   "directories": {
     "test": "tests"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test-ts-node": "ts-node ./tests/sort.test.ts"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/JCPedroza/sorting-algorithms-ts.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "algorithms",
+    "sorting"
+  ],
+  "author": "JCPedroza",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/JCPedroza/sorting-algorithms-ts/issues"
   },
-  "homepage": "https://github.com/JCPedroza/sorting-algorithms-ts#readme",
+  "homepage": "https://github.com/JCPedroza/sorting-algorithms-ts",
   "dependencies": {
     "ts-node": "^10.9.1"
   }
