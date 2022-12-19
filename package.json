@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/JCPedroza/sorting-algorithms-ts/issues"
   },
-  "homepage": "https://github.com/JCPedroza/sorting-algorithms-ts#readme"
+  "homepage": "https://github.com/JCPedroza/sorting-algorithms-ts#readme",
+  "dependencies": {
+    "ts-node": "^10.9.1"
+  }
 }
