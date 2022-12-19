@@ -28,5 +28,6 @@ npm install # Modules
 To run unit tests:
 
 ```bash
-./scripts/run-unit-tests.sh
+./scripts/unit-tests-bun.sh # Bun
+./scripts/unit-tests-ts-node.sh # TS-Node
 ```
