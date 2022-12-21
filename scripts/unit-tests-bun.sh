@@ -5,6 +5,5 @@ then
   exit
 fi
 
-printf '\n'
 time sh -c 'bun ./tests/sort.test.ts && bun ./tests/prof-utils.test.ts'
 printf '\n'
