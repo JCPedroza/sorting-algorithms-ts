@@ -1,7 +1,7 @@
 /**
- * Sorts numeric array, in ascending order, in-place, using Insertion Sort. 
- * This version does one comparison and one swap per iteration. Other movements are 
- * shifts instead of swaps, having the data moved around when compared to the 
+ * Sorts numeric array, in ascending order, in-place, using Insertion Sort.
+ * This version does one comparison and one swap per iteration. Other movements are
+ * shifts instead of swaps, having the data moved around when compared to the
  * swap heavy version.
  * Complexity: time AO(n²) WO(n²) BO(n), space TO(n) AO(1).
  *

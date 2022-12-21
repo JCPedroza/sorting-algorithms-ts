@@ -2,15 +2,15 @@
  * Merge two numeric arrays by their first element, prioritizing the lowest value.
  * If both arrays are sorted, the merged array will be sorted too (ascending).
  * Complexity: time O(n), space O(n).
- * 
+ *
  * @param left Numeric array to be merged.
  * @param right Numeric array to be merged.
- * @returns The first-element low-value-priority merge of the two input arrays. 
+ * @returns The first-element low-value-priority merge of the two input arrays.
  */
-const merge = (left: number[], right: number[]) => {
+const merge = (left: number[], right: number[]): number[] => {
   const both: number[] = []
 
-  while (left.length && right.length) {
+  while ((left.length > 0) && (right.length > 0)) {
     both.push(left[0] < right[0] ? left.shift() : right.shift())
   }
 

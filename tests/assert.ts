@@ -22,7 +22,8 @@ const throwError = (
   throw new Error(msg)
 }
 
-export const buildId = (fun: string, arg: string) => `${fun}(${arg})`
+export const buildId =
+  (funName: string, arg: string): string => `${funName}(${arg})`
 
 /**
  * Micro test framework. Asserts equality between two numeric arrays.
