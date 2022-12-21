@@ -1,8 +1,8 @@
 /**
- * Sorts number array in-place using Selection Sort.
+ * Sorts numeric array, in ascending order, in-place, using Selection Sort.
  * Complexity: time AO(n²) WO(n²) BO(n²), space TO(n) AO(1).
  *
- * @param nums Number array to be sorted.
+ * @param nums Numeric array to be sorted.
  * @returns Reference to the input array, now sorted.
  */
 const selectionSort = (nums: number[]): number[] => {
