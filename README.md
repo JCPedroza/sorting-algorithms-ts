@@ -7,6 +7,7 @@ This is an exercise to study and practice:
 - Unit testing
 - Profiling
 - Documenting
+- Version control
 
 ## Prompt
 
@@ -54,3 +55,7 @@ For Unix, Linux, and MacOS, you can use the shell executable files.
 ./scripts/unit-tests-ts-node.sh # Run all unit tests with TS-Node
 ./scripts/unit-tests-ts-tsc.sh # Transpile with TSC and run all unit tests with Node
 ```
+
+## Contribute
+
+Pull requests and code reviews are always welcome!
