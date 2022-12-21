@@ -2,7 +2,7 @@
  * Unit tests for sorting functions.
  */
 
-import {test, buildId} from './assert'
+import { test, buildId } from './assert'
 import sorters from '../algorithms/sort.repo'
 
 for (const sort of sorters) {
