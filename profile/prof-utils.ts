@@ -50,9 +50,20 @@ export const descendingArray = (size: number): number[] => {
   return array
 }
 
+// Durstenfeld shuffle (optimized Fisher-Yates shuffle)
+export const shuffleArray = <T> (arr: T[]): T[] => {
+  for (let idx = arr.length - 1; idx > 0; idx--) {
+    const rngIdx = Math.trunc(Math.random() * (idx + 1))
+    ;[arr[idx], arr[rngIdx]] = [arr[rngIdx], arr[idx]]
+  }
+
+  return arr
+}
+
 export default {
   randomIntArray,
   randomNumArray,
   ascendingArray,
-  descendingArray
+  descendingArray,
+  shuffleArray
 }
