@@ -29,8 +29,8 @@ interface ProfileOptions {
 }
 
 interface ProfileResult {
-  size: number,
-  id: string,
+  size: number
+  id: string
   time: number
 }
 
@@ -76,14 +76,14 @@ const targetOptions = [
 ]
 
 const results = new Map()
-const iters = 1
+const iters = 10
 
 for (const options of targetOptions) {
   const funResults = new Map()
 
   for (const sorter of sorters) {
     funResults.set(
-      sorter.name, 
+      sorter.name,
       { size: options.size, id: sorter.name, time: Infinity }
     )
   }
@@ -107,7 +107,7 @@ for (let iter = 0; iter < iters; iter++) {
         results.get(options.size).set(sorter.name, res)
       }
     }
-  }  
+  }
 }
 
 console.log(results)
