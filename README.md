@@ -37,14 +37,13 @@ of the exercise is to informally benchmark the runtime and memory usage of diffe
 runtimes, including:
 
 - Node
-- Deno
 - Bun
 - TS-Node
 - TSC + Node
 
 The `scripts` directory is where this dynamic is centralized.
 
-#### Unit Tests
+#### Running Unit Tests
 
 ##### POSIX Shell Scripts
 
