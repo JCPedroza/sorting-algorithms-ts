@@ -29,4 +29,4 @@ for (const sort of sorters) {
   console.log(`${sort.name} passed all unit tests!`)
 }
 
-console.log(`\nPerformed unit tests for ${sorters.length} sorting functions.\n`)
+console.log(`\nPerformed unit tests for ${sorters.length} sorting functions.`)
