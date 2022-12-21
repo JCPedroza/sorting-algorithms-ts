@@ -10,8 +10,11 @@
 const merge = (left: number[], right: number[]): number[] => {
   const both: number[] = []
 
-  while ((left.length > 0) && (right.length > 0)) {
-    both.push(left[0] < right[0] ? left.shift() : right.shift())
+  while (left.length > 0 && right.length > 0) {
+    const val = left[0] < right[0] ? left.shift() : right.shift()
+    // Shift returns algebraic type number | undefined, needs undefined check.
+    if (val === undefined) throw new Error('Cannot merge undefined value.')
+    both.push(val)
   }
 
   return [...both, ...left, ...right]
