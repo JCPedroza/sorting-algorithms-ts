@@ -12,5 +12,5 @@ then
     exit
 fi
 
-time sh -c 'npm run build; node ./dist/tests/sort.test.js; rm -r ./dist'
+time sh -c 'npm run build; node ./dist/tests/sort.test.js && node ./dist/tests/prof-utils.test.js; rm -r ./dist'
 printf '\n'
