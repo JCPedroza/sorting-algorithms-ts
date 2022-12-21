@@ -5,13 +5,18 @@ This is an exercise to study and practice:
 - TypeScript
 - Sorting algorithms
 - Unit testing
-- Time and memory profiling
+- Profiling
+- Documenting
 
 ## Prompt
 
-Implement, unit test, time profile, and memory profile different sorting algorithms.
+Implement, unit test, document, time profile, and memory profile different sorting 
+algorithms.
 
-Keep things simple, don't use dependencies unless absolutely necessary.
+Keep things simple!
+
+- Don't use dependencies unless absolutely necessary.
+- Create your own micro-frameworks for unit testing and profiling, if possible.
 
 ## Install Dependencies
 
@@ -27,9 +32,23 @@ npm install # Modules
 
 ### Provided Scripts
 
+You can use the provided scripts to run everything easily. One of the secondary goals 
+of the exercise is to informally benchmark the runtime and memory usage of different 
+runtimes, including:
+
+- Node
+- Deno
+- Bun
+- TS-Node
+- TSC + Node
+
+The `scripts` directory is where this dynamic is centralized.
+
 #### Unit Tests
 
 ##### POSIX Shell Scripts
+
+For Unix, Linux, and MacOS, you can use the shell executable files.
 
 ```bash
 ./scripts/unit-tests-bun.sh # Run all unit tests with Bun
