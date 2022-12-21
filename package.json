@@ -11,7 +11,7 @@
     "test": "tests"
   },
   "scripts": {
-    "test-ts-node": "ts-node ./tests/sort.test.ts",
+    "test-ts-node": "ts-node ./tests/sort.test.ts && ts-node ./tests/prof-utils.test.ts",
     "build": "tsc --project ./tsconfig.json"
   },
   "repository": {
