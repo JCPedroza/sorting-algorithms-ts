@@ -3,6 +3,7 @@ import selectionSort from './selection-sort'
 import insertionSwapSort from './insertion-swap-sort'
 import insertionShiftSort from './insertion-shift-sort'
 import mergeSort from './merge-sort'
+import nativeSort from './native-sort'
 
 /**
  * Collection of sort functions for use in testing, profiling, etc.
@@ -12,7 +13,8 @@ const sorters = [
   selectionSort,
   insertionSwapSort,
   insertionShiftSort,
-  mergeSort
+  mergeSort,
+  nativeSort
 ]
 
 export default sorters
