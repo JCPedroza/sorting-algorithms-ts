@@ -1,26 +1,35 @@
 /**
  * Organizes subtree as a max heap, and recursively operates on affected subtrees.
- * 
+ * Non-recursive implementation using a boolean flag and a next nextNode variable.
+ *
  * @param tree Array representation of a binary tree.
  * @param size Size of heap.
- * @param root Index of root node.
+ * @param root Index of root nextNode.
  */
 const heapify = (tree: number[], size: number, root: number): void => {
-  const leftChild = root * 2 + 1
-  const rightChild = leftChild + 1
-  let max = root
+  let nextNode = root
+  let stop = false
 
-  if (leftChild < size && tree[leftChild] > tree[max]) {
-    max = leftChild
-  }
+  while (!stop) {
+    const leftChild = nextNode * 2 + 1
+    const rightChild = leftChild + 1
+    let max = nextNode
 
-  if (rightChild < size && tree[rightChild] > tree[max]) {
-    max = rightChild
-  }
+    if (leftChild < size && tree[leftChild] > tree[max]) {
+      max = leftChild
+    }
 
-  if (max !== root) {
-    [tree[root], tree[max]] = [tree[max], tree[root]]
-    heapify(tree, size, max)
+    if (rightChild < size && tree[rightChild] > tree[max]) {
+      max = rightChild
+    }
+
+    if (max !== nextNode) {
+      [tree[nextNode], tree[max]] = [tree[max], tree[nextNode]]
+      nextNode = max
+      stop = false
+    } else {
+      stop = true
+    }
   }
 }
 
@@ -31,7 +40,7 @@ const heapify = (tree: number[], size: number, root: number): void => {
  * @param nums Numeric array to be sorted.
  * @returns Reference to the input array, now sorted.
  */
-const heapSort = (nums: number[]): number[] => {
+const heapFlagSort = (nums: number[]): number[] => {
   // Organize array into a heap
   for (let idx = Math.trunc(nums.length / 2 - 1); idx >= 0; idx--) {
     heapify(nums, nums.length, idx)
@@ -46,4 +55,4 @@ const heapSort = (nums: number[]): number[] => {
   return nums
 }
 
-export default heapSort
+export default heapFlagSort
