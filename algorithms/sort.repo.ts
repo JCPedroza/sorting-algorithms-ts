@@ -4,7 +4,9 @@ import selectionSort from './selection-sort'
 import insertionSwapSort from './insertion-swap-sort'
 import insertionShiftSort from './insertion-shift-sort'
 import mergeSort from './merge-sort'
-import heapSort from './heap-sort'
+import heapRecursiveSort from './heap-recursive-sort'
+import heapStackSort from './heap-stack-sort'
+import heapFlagSort from './heap-flag-sort'
 
 /**
  * Collection of all sort functions for use in testing, profiling, etc.
@@ -16,7 +18,9 @@ const sorters = [
   insertionSwapSort,
   insertionShiftSort,
   mergeSort,
-  heapSort
+  heapRecursiveSort,
+  heapStackSort,
+  heapFlagSort
 ]
 
 export default sorters
