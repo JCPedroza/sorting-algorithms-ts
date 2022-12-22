@@ -16,7 +16,16 @@ jobs:
       run: |
         curl -fsSL https://bun.sh/install | bash
 
-    - name: Run unit tests
+    - name: Install Deno (TS Runtime)
+      run: |
+        curl -fsSL https://deno.land/x/install/install.sh | sh
+
+    - name: Run unit tests with Bun
       run: |
         ~/.bun/bin/bun ./tests/sort.test.ts &&
         ~/.bun/bin/bun ./tests/prof-utils.test.ts
+
+    - name: Run unit tests with Deno
+      run: |
+        deno ./tests/sort.test.ts &&
+        deno ./tests/prof-utils.test.ts
