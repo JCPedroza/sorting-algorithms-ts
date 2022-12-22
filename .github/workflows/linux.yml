@@ -27,5 +27,5 @@ jobs:
 
     - name: Run unit tests with Deno
       run: |
-        deno ./tests/sort.test.ts &&
-        deno ./tests/prof-utils.test.ts
+        ~/runner/.deno/bin/deno ./tests/sort.test.ts &&
+        ~/runner/.deno/bin/deno ./tests/prof-utils.test.ts
