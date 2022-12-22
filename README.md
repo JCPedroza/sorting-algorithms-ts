@@ -1,5 +1,11 @@
 # Sorting Algorithms Implemented in TypeScript
 
+[![typescript][2]][3]
+[![linux build & tests][0]][1]
+[![linting][4]][5]
+[![license MIT][6]][7]
+[![ts-standard][8]][9]
+
 This is an exercise to study and practice:
 
 - TypeScript
@@ -59,3 +65,16 @@ For Unix, Linux, and MacOS, you can use the shell executable files.
 ## Contribute
 
 Pull requests and code reviews are always welcome!
+
+---
+
+[0]: https://github.com/JCPedroza/sorting-algorithms-ts/actions/workflows/linux.yml/badge.svg
+[1]: https://github.com/JCPedroza/sorting-algorithms-ts/actions/workflows/linux.yml
+[2]: https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white
+[3]: https://github.com/microsoft/TypeScript
+[4]: https://github.com/JCPedroza/algorithms-and-data-structures-ts/actions/workflows/lint.yml/badge.svg
+[5]: https://github.com/JCPedroza/algorithms-and-data-structures-ts/actions/workflows/lint.yml
+[6]: https://badgen.net/github/license/JCPedroza/algorithms-and-data-structures-ts
+[7]: https://opensource.org/licenses/MIT
+[8]: https://badgen.net/badge/style/ts-standard/blue?icon=typescript
+[9]: https://github.com/standard/ts-standard
