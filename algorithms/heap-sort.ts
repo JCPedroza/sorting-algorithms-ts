@@ -1,3 +1,10 @@
+/**
+ * Organizes subtree as a max heap, and recursively operates on affected subtrees.
+ * 
+ * @param tree Array representation of a binary tree.
+ * @param size Size of heap.
+ * @param root Index of root node.
+ */
 const heapify = (tree: number[], size: number, root: number): void => {
   const leftChild = root * 2 + 1
   const rightChild = leftChild + 1
