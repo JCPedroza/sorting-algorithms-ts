@@ -35,7 +35,7 @@ interface ProfileResult {
 }
 
 const maxFunNameSize = (funs: SortFun[]): number => {
-  let max = 0;
+  let max = 0
 
   for (const fun of funs) {
     if (fun.name.length > max) {
@@ -121,10 +121,10 @@ console.log('')
 
 const namePad = maxFunNameSize(sorters)
 
-results.forEach((map, size) => {
+results.forEach((map: Map<string, ProfileResult>, size: number) => {
   console.log(`Size ${size}`)
 
   map.forEach((result: ProfileResult, name: string) => {
-    console.log(`  ${name.padEnd(namePad)} ${result.time.toFixed(5).padStart(3)}`)
+    console.log(`  ${name.padEnd(namePad)} ${result.time.toFixed(5).padStart(10)}`)
   })
 })
