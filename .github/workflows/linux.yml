@@ -1,0 +1,19 @@
+name: linux build & tests
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Install Bun (TS Runtime)
+      run: |
+        curl -fsSL https://bun.sh/install | bash
+
+    - name: Run unit tests
+      run: |
+        bun ./tests/sort.test.ts &&
+        bun ./tests/prof-utils.test.ts
