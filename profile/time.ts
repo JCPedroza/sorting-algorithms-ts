@@ -34,6 +34,18 @@ interface ProfileResult {
   time: number
 }
 
+const maxFunNameSize = (funs: SortFun[]): number => {
+  let max = 0;
+
+  for (const fun of funs) {
+    if (fun.name.length > max) {
+      max = fun.name.length
+    }
+  }
+
+  return max
+}
+
 const optionsToNums = (options: ProfileOptions): number[] => {
   if (options.range === undefined) options.range = { from: -1, to: -1 }
 
@@ -67,16 +79,11 @@ const timeProfile =
     runAndTime(sorter, optionsToNums(options))
 
 const targetOptions = [
-  { size: 0, mode: Mode.Descending },
-  { size: 1, mode: Mode.Descending },
-  { size: 10, mode: Mode.Descending },
-  { size: 100, mode: Mode.Descending },
-  { size: 1_000, mode: Mode.Descending },
   { size: 10_000, mode: Mode.Descending }
 ]
 
 const results = new Map()
-const iters = 10
+const iters = 5
 
 for (const options of targetOptions) {
   const funResults = new Map()
@@ -91,10 +98,10 @@ for (const options of targetOptions) {
   results.set(options.size, funResults)
 }
 
-console.log(`\nProfiling time for ${iters} iterations.`)
+console.log(`\nProfiling time for ${iters} iterations`)
 
 for (let iter = 0; iter < iters; iter++) {
-  console.log(`  Performing iteration ${iter + 1}.`)
+  console.log(`  Performing iteration ${iter + 1}`)
 
   for (const options of targetOptions) {
     shuffleArray(sorters)
@@ -110,4 +117,14 @@ for (let iter = 0; iter < iters; iter++) {
   }
 }
 
-console.log(results)
+console.log('')
+
+const namePad = maxFunNameSize(sorters)
+
+results.forEach((map, size) => {
+  console.log(`Size ${size}`)
+
+  map.forEach((result: ProfileResult, name: string) => {
+    console.log(`  ${name.padEnd(namePad)} ${result.time.toFixed(5).padStart(3)}`)
+  })
+})
