@@ -14,6 +14,7 @@ This is an exercise to study and practice:
 - Profiling
 - Documenting
 - Version control
+- Continuous integration
 
 ## Prompt
 
