@@ -13,7 +13,8 @@
   "scripts": {
     "test-ts-node": "ts-node ./tests/sort.test.ts && ts-node ./tests/prof-utils.test.ts",
     "time-profile-ts-node": "ts-node ./profile/time.ts",
-    "build": "tsc --project ./tsconfig.json"
+    "build": "tsc --project ./tsconfig.json",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -34,6 +35,7 @@
     "typescript": "^4.9.4"
   },
   "devDependencies": {
+    "husky": "^8.0.2",
     "ts-standard": "^12.0.2"
   }
 }
