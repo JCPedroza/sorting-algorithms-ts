@@ -2,7 +2,7 @@ const quickRecursiveSortNoRng = (nums: number[]): number[] => {
   if (nums.length < 2) return nums
 
   const loop = (left: number, right: number): void => {
-    if (left >= right) return nums
+    if (left >= right) return
 
     let idxL = left
     let idxR = right
