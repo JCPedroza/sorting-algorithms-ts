@@ -18,5 +18,5 @@ jobs:
 
     - name: Run unit tests
       run: |
-        bun ./tests/sort.test.ts &&
-        bun ./tests/prof-utils.test.ts
+        ~/.bun/bin/bun ./tests/sort.test.ts &&
+        ~/.bun/bin/bun ./tests/prof-utils.test.ts
