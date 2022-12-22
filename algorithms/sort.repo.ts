@@ -7,6 +7,8 @@ import mergeSort from './merge-sort'
 import heapRecursiveSort from './heap-recursive-sort'
 import heapStackSort from './heap-stack-sort'
 import heapFlagSort from './heap-flag-sort'
+import quickRecursiveSortNoRng from './quick-recursive-sort-no-rng'
+import quickRecursiveSortRng from './quick-recursive-sort-rng'
 
 /**
  * Collection of all sort functions for use in testing, profiling, etc.
@@ -20,7 +22,9 @@ const sorters = [
   mergeSort,
   heapRecursiveSort,
   heapStackSort,
-  heapFlagSort
+  heapFlagSort,
+  quickRecursiveSortNoRng,
+  quickRecursiveSortRng
 ]
 
 export default sorters
