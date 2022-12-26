@@ -61,7 +61,6 @@ const optionsToNums = (options: ProfileOptions): number[] => {
   }
 }
 
-// In ms
 const runAndTime = (sorter: SortFun, arg: number[]): ProfileResult => {
   const start = performance.now()
   sorter(arg)
@@ -91,7 +90,7 @@ for (const options of targetOptions) {
   for (const sorter of sorters) {
     funResults.set(
       sorter.name,
-      { size: options.size, id: sorter.name, time: Infinity }
+      { size: options.size, i: sorter.name, time: Infinity }
     )
   }
 
