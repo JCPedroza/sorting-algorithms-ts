@@ -28,12 +28,12 @@ Keep things simple!
 
 ## Install Dependencies
 
-### Ubuntu
+### Multi-Platform
 
 ```bash
 curl -fsSL https://bun.sh/install | bash # Bun
-apt install nodejs npm # Node
-npm install # Modules
+curl -fsSL https://deno.land/x/install/install.sh | sh # Deno
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.2/install.sh | bash # NVM
 ```
 
 ## Usage
