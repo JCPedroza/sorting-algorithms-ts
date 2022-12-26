@@ -1,4 +1,5 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-bun ./tests/sort.test.ts && bun ./tests/prof-utils.test.ts
+bun ./tests/sort.test.ts && bun ./tests/prof-utils.test.ts &
+deno run ./tests/sort.test.ts && deno run ./tests/prof-utils.test.ts
