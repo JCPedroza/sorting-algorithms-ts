@@ -1,5 +1,6 @@
 import nativeSort from './native-sort.ts'
-import bubbleSort from './bubble-sort.ts'
+import bubbleTemplessSort from './bubble-templess-sort.ts'
+import bubbleTempSort from './bubble-temp-sort.ts'
 import selectionSort from './selection-sort.ts'
 import insertionSwapSort from './insertion-swap-sort.ts'
 import insertionShiftSort from './insertion-shift-sort.ts'
@@ -15,7 +16,8 @@ import quickRecursiveSortRng from './quick-recursive-sort-rng.ts'
  */
 const sorters = [
   nativeSort,
-  bubbleSort,
+  bubbleTemplessSort,
+  bubbleTempSort,
   selectionSort,
   insertionSwapSort,
   insertionShiftSort,
