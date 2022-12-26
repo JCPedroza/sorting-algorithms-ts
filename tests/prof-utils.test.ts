@@ -1,11 +1,11 @@
-import { test } from './assert'
+import { test } from './assert.ts'
 
 import {
   randomIntArray,
   randomNumArray,
   ascendingArray,
   descendingArray
-} from '../profile/prof-utils'
+} from '../profile/prof-utils.ts'
 
 // There's some non-deterministic unit tests. This is usually a bad idea, but as this
 // is an informal exercise, I'm including some of them as an experiment to test

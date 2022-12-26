@@ -1,9 +1,8 @@
 /**
  * Unit tests for sorting functions.
  */
-
-import { test, buildId } from './assert'
-import sorters from '../algorithms/sort.repo'
+import { test, buildId } from './assert.ts'
+import sorters from '../algorithms/sort.repo.ts'
 
 for (const sort of sorters) {
   test(buildId(sort.name, '[]'))
@@ -26,7 +25,7 @@ for (const sort of sorters) {
     .expect(sort([3.4, -6.2, -0.7, 9.8, 1.6, -4.5]))
     .toEqual([-6.2, -4.5, -0.7, 1.6, 3.4, 9.8])
 
-  console.log(`${sort.name} passed all unit tests!`)
+  console.log(`${sort.name as string} passed all unit tests!`)
 }
 
-console.log(`\nPerformed unit tests for ${sorters.length} sorting functions.`)
+console.log(`\nPerformed unit tests for ${sorters.length as number} sorting functions.`)
