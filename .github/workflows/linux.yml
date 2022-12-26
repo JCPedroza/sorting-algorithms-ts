@@ -12,9 +12,9 @@ jobs:
     steps:
     - uses: actions/checkout@v3
 
-    #- uses: denoland/setup-deno@v1
-    #  with:
-    #    deno-version: v1.x
+    - uses: denoland/setup-deno@v1
+      with:
+        deno-version: v1.x
 
     - name: Install Bun (TS Runtime)
       run: |
@@ -25,7 +25,7 @@ jobs:
         ~/.bun/bin/bun ./tests/sort.test.ts &&
         ~/.bun/bin/bun ./tests/prof-utils.test.ts
 
-    # - name: Run unit tests with Deno
-    #  run: |
-    #    deno run ./tests/sort.test.ts &&
-    #    deno run ./tests/prof-utils.test.ts
+    - name: Run unit tests with Deno
+      run: |
+        deno run ./tests/sort.test.ts &&
+        deno run ./tests/prof-utils.test.ts
