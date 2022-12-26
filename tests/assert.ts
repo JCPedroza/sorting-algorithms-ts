@@ -25,7 +25,7 @@ const throwError = (
   why: string,
   id: string,
   numsA: number[],
-  numsB?: any
+  numsB?: number | number[] | Range
 ): void => {
   const strNumsA = String(numsA)
   const strNumsB = (numsB !== undefined && numsB !== null) ? String(numsB) : ''
