@@ -1,4 +1,4 @@
-import sorters from '../algorithms/sort.repo'
+import sorters from '../algorithms/sort.repo.ts'
 
 import {
   ascendingArray,
@@ -6,7 +6,7 @@ import {
   randomIntArray,
   randomNumArray,
   shuffleArray
-} from './prof-utils'
+} from './prof-utils.ts'
 
 type SortFun = (nums: number[]) => number[]
 
@@ -79,7 +79,7 @@ const timeProfile =
     runAndTime(sorter, optionsToNums(options))
 
 const targetOptions = [
-  { size: 10_000, mode: Mode.Descending }
+  { size: 5_000, mode: Mode.Descending }
 ]
 
 const results = new Map()
