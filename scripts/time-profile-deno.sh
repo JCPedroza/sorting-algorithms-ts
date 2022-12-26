@@ -1,3 +1,6 @@
+# Run time profiling using Deno as runtime
+# The --allow-hrtime flag is needed for high resolution times
+
 if ! command -v deno
 then
   printf "\nThe 'deno' command cannot be found.\n"
@@ -5,5 +8,5 @@ then
   exit
 fi
 
-time sh -c 'deno run ./profile/time.ts'
+time sh -c 'deno run --allow-hrtime ./profile/time.ts'
 printf '\n'
